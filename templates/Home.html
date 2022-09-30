@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | APS</title>
+</head>
+<body>
+    <h1>{{titulo_home|upper}} </h1>
+    <table>
+
+            <thead>
+        <tr>
+           <th>Nome</th>
+            <th>Categoria</th>
+            <th>Console</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+         {%for jogo in jogos%}
+        <tr>
+            <td>{{jogo.nome}}</td>
+            <td>{{jogo.categoria}}</td>
+            <td>{{jogo.console}}</td>
+        </tr>
+        {%endfor%}
+    </tbody>
+
+
+    </table>
+
+
+</body>
+</html>
